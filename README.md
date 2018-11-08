@@ -190,7 +190,7 @@ Happy coding
 
 ## Versioning
 
-We use [Github](https://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dunadevAndroid/bleLib/releases). 
+We use [Github](https://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/EmKsolandroid/ble/releases). 
 
 ## Authors
 
