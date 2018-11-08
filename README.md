@@ -194,7 +194,7 @@ We use [Github](https://github.com/) for versioning. For the versions available,
 
 ## Authors
 
-* **Dunasys Ingenierie** -
+* **Maturi Karthik ** - maturikarthik31@gmail.com
 
 
 
