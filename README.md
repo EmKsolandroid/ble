@@ -200,7 +200,7 @@ We use [Github](https://github.com/) for versioning. For the versions available,
 
 ## License
 
-This project is licensed under the Dunasys License - 
+This project is licensed under MIT - 
 
 
 
