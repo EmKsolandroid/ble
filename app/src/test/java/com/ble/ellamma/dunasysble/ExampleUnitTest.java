@@ -1,4 +1,4 @@
-package com.ble.dunasys.bleand;
+package com.ble.ellamma.dunasysble;
 
 import org.junit.Test;
 

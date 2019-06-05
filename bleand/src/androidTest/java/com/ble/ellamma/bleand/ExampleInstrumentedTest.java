@@ -1,4 +1,4 @@
-package com.ble.dunasys.dunasysble;
+package com.ble.ellamma.bleand;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ble.dunasys.dunasysble", appContext.getPackageName());
+        assertEquals("com.ble.dunasys.bleand.test", appContext.getPackageName());
     }
 }

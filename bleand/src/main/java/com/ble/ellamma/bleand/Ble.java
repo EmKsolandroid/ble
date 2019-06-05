@@ -1,4 +1,4 @@
-package com.ble.dunasys.bleand;
+package com.ble.ellamma.bleand;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -41,16 +41,16 @@ public class Ble {
     private BluetoothGatt mBluetoothGatt;
     private BluetoothManager bluetoothManager;
     private BluetoothDevice mDevice;
-    private String ACTION_INTENT ;
+    private String ACTION_INTENT;
 
 
     /**
-     * Constrcutin initialization ..
+     * Constructing initialization ..
      *
      * @param mActivity
      * @param mContext
      */
-    public Ble(Activity mActivity, Context mContext,String RECIVER_ACTION_INTENT) {
+    public Ble(Activity mActivity, Context mContext, String RECIVER_ACTION_INTENT) {
         this.mActivity = mActivity;
         this.mContext = mContext;
         this.ACTION_INTENT = RECIVER_ACTION_INTENT;
@@ -59,7 +59,6 @@ public class Ble {
         enableBle();
 
     }
-
 
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
@@ -151,9 +150,6 @@ public class Ble {
     };
 
 
-
-
-
     /**
      * Enable Bluetooth
      */
@@ -174,6 +170,7 @@ public class Ble {
 
     /**
      * Check Permission
+     *
      * @param permission
      * @return
      */
@@ -195,6 +192,7 @@ public class Ble {
 
     /**
      * scan Device
+     *
      * @param enable
      * @param SCAN_PERIOD
      */
@@ -224,6 +222,7 @@ public class Ble {
 
     /**
      * Get The List Of Scanned Device
+     *
      * @return
      */
     public ArrayList<String> getDevices() {
@@ -302,7 +301,7 @@ public class Ble {
      * Enable Notification
      */
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
-    public void enableNotification(UUID DLE_SERVICE, UUID characteristics,UUID CLIENT_CCD ,boolean enable) {
+    public void enableNotification(UUID DLE_SERVICE, UUID characteristics, UUID CLIENT_CCD, boolean enable) {
 
 
         BluetoothGattService Service = mBluetoothGatt.getService(DLE_SERVICE);
@@ -332,7 +331,7 @@ public class Ble {
         boolean result = mBluetoothGatt.writeDescriptor(descriptor);
 
 
-        Log.d(TAG, "Notification-UUID::"+ characteristic.getUuid()+"-->"+ result);
+        Log.d(TAG, "Notification-UUID::" + characteristic.getUuid() + "-->" + result);
 
 
     }
@@ -385,9 +384,6 @@ public class Ble {
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
     public void broadcastUpdate(BluetoothGattCharacteristic characteristic) {
 
-
-
-
         final byte[] data = characteristic.getValue();
         if (data != null && data.length > 0) {
             final StringBuilder stringBuilder = new StringBuilder(data.length);
@@ -396,12 +392,8 @@ public class Ble {
             Log.d(TAG, "DATA==" + new String(data) + "\n" + stringBuilder.toString());
 
             Intent intent = new Intent(ACTION_INTENT);
-            intent.putExtra("data",stringBuilder.toString());
+            intent.putExtra("data", stringBuilder.toString());
             mContext.sendBroadcast(intent);
         }
-
-
-
-
     }
 }
