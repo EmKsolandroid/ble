@@ -1,4 +1,4 @@
-# Ble Library V1.0
+# Ble Library V1.1
 ![alt text](https://camo.githubusercontent.com/f955549c1c2a3f18777beabc31d20728dbf6f62a/68747470733a2f2f696d672e6761646765746861636b732e636f6d2f696d672f37302f32372f36333537343930353934343038312f302f616e64726f69642d6261736963732d636f6e6e6563742d626c7565746f6f74682d6465766963652e31323830783630302e6a7067)
 
 Simple and Mechanized Library to develop the BLE applications faster .
@@ -26,7 +26,7 @@ Step 2  Add the dependency
 ```
 dependencies {
 	        
-	    implementation 'com.github.EmKsolandroid:ble:1.0'
+	    implementation 'com.github.EmKsolandroid:ble:1.1'
 
 	}
 ```
@@ -48,7 +48,7 @@ Step 1 :
  <dependency>
 	    <groupId>com.github.EmKsolandroid</groupId>
 	    <artifactId>ble</artifactId>
-	    <version>1.0</version>
+	    <version>1.1</version>
 	</dependency>
 ```
 
