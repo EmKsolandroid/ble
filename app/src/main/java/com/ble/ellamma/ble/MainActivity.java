@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ble.ellamma.bleand.Ble;
-import com.ble.ellamma.dunasysble.R;
+import com.ble.ellamma.ble.R;
 
 public class MainActivity extends AppCompatActivity {
 
